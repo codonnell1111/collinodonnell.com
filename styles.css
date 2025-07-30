@@ -112,27 +112,38 @@ section {
 }
 
 .scroll-btn {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: none;
-  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 2px solid var(--main);
+  color: var(--main);
+  font-size: 1.75rem;
+  font-weight: bold;
   cursor: pointer;
-  z-index: 10;
-  padding: 0.5rem 1rem;
-  margin: 0 0.5rem;
+  padding: 0.5rem;
   border-radius: 50%;
-  transition: background 0.3s ease;
+  z-index: 10;
+  transition: all 0.3s ease;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .scroll-btn:hover {
   background-color: var(--accent);
   color: white;
+  border-color: var(--accent);
 }
 
 .scroll-btn.left {
-  margin-right: -2rem;
+  left: -20px; /* adjust based on your spacing */
 }
 
 .scroll-btn.right {
-  margin-left: -2rem;
+  right: -20px;
 }
 
 /* Make items snap into view */
