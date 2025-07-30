@@ -143,6 +143,16 @@ section {
   opacity: 0;
 }
 
+.scroll-btn svg {
+  stroke: var(--main);
+  width: 24px;
+  height: 24px;
+}
+
+.scroll-btn:hover svg {
+  stroke: white;
+}
+
 .scroll-btn:hover {
   background-color: var(--accent);
   color: white;
