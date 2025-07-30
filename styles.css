@@ -105,21 +105,36 @@ section {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   gap: 1.5rem;
-  padding-bottom: 1rem;
-  scrollbar-width: thin;
-  scrollbar-color: var(--accent) transparent;
+  padding: 1rem 0;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* hide scrollbar on Firefox */
+}
+.scroll-container::-webkit-scrollbar {
+  display: none; /* hide scrollbar on Chrome/Safari */
 }
 
-/* Optional: Hide scrollbar for WebKit browsers */
-.scroll-container::-webkit-scrollbar {
-  height: 10px;
+.scroll-btn {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+  transition: background 0.3s ease;
 }
-.scroll-container::-webkit-scrollbar-track {
-  background: transparent;
-}
-.scroll-container::-webkit-scrollbar-thumb {
+.scroll-btn:hover {
   background-color: var(--accent);
-  border-radius: 10px;
+  color: white;
+}
+
+.scroll-btn.left {
+  margin-right: -2rem;
+}
+
+.scroll-btn.right {
+  margin-left: -2rem;
 }
 
 /* Make items snap into view */
