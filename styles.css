@@ -98,6 +98,10 @@ section {
   text-decoration: underline;
 }
 
+.carousel-wrapper {
+  position: relative;
+}
+
 .scroll-container {
   display: flex;
   overflow-x: auto;
@@ -158,6 +162,16 @@ section {
 .scroll-container img {
   scroll-snap-align: start;
   flex: 0 0 300px; /* Set width of project/art items */
+}
+
+@media (max-width: 600px) {
+  .scroll-btn.left {
+    left: 5px;
+  }
+
+  .scroll-btn.right {
+    right: 5px;
+  }
 }
 
 .art {
