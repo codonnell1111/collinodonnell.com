@@ -1,7 +1,3 @@
-<script src="script.js"></script>
-</body>
-</html>
-
 // Scroll behavior for all carousel wrappers
 document.querySelectorAll('.carousel-wrapper').forEach(wrapper => {
   const container = wrapper.querySelector('.scroll-container');
