@@ -70,15 +70,13 @@ section {
 }
 
 .project {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
   background: white;
   padding: 1rem;
   border: 1px solid #ccc;
   border-radius: 10px;
-  flex: 0 0 320px;
   scroll-snap-align: start;
+  flex: 0 0 300px;
+  box-sizing: border-box;
 }
 
 .project img {
