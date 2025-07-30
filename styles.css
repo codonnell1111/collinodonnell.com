@@ -43,7 +43,7 @@ nav a:hover {
   flex-wrap: wrap;
   align-items: center;
   padding: 2rem;
-  background: linear-gradient(to right, #fff, #ffe8f0);
+  background: linear-gradient(to right, #ff7e7e, #cc0000);
 }
 
 .hero img {
@@ -58,6 +58,10 @@ nav a:hover {
 
 section {
   padding: 3rem 2rem;
+}
+
+.portfolio {
+  background: linear-gradient(to left, #95a8fe, #0003cc);
 }
 
 .project-grid {
@@ -91,6 +95,10 @@ section {
   text-decoration: underline;
 }
 
+.art {
+  background: linear-gradient(to right, #a3ffa8, #1c8b00);
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -101,6 +109,10 @@ section {
   width: 200px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.resume {
+  background: linear-gradient(to left, #ffdc89, #9c8f00);
 }
 
 .resume-button {
