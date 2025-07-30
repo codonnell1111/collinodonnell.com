@@ -96,8 +96,38 @@ section {
   text-decoration: none;
   font-weight: bold;
 }
+
 .project a:hover {
   text-decoration: underline;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) transparent;
+}
+
+/* Optional: Hide scrollbar for WebKit browsers */
+.scroll-container::-webkit-scrollbar {
+  height: 10px;
+}
+.scroll-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: var(--accent);
+  border-radius: 10px;
+}
+
+/* Make items snap into view */
+.project,
+.scroll-container img {
+  scroll-snap-align: start;
+  flex: 0 0 300px; /* Set width of project/art items */
 }
 
 .art {
