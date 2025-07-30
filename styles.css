@@ -144,11 +144,11 @@ section {
 }
 
 .scroll-btn.left {
-  left: -20px; /* adjust based on your spacing */
+  left: 10px; /* adjust based on your spacing */
 }
 
 .scroll-btn.right {
-  right: -20px;
+  right: 10px;
 }
 
 /* Make items snap into view */
