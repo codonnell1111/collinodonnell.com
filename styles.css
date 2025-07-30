@@ -69,17 +69,16 @@ section {
   background: linear-gradient(to right, #95a8fe, #0003cc);
 }
 
-.project-grid {
+.project {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
-}
-
-.project {
   background: white;
   padding: 1rem;
   border: 1px solid #ccc;
   border-radius: 10px;
+  flex: 0 0 320px;
+  scroll-snap-align: start;
 }
 
 .project img {
