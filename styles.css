@@ -1,3 +1,7 @@
+html {
+  scroll-padding-top: 80px;
+}
+
 :root {
   --main: #24292e;
   --accent: #ff4081;
@@ -58,10 +62,11 @@ nav a:hover {
 
 section {
   padding: 3rem 2rem;
+  transition: background 0.4s ease;
 }
 
 .portfolio {
-  background: linear-gradient(to left, #95a8fe, #0003cc);
+  background: linear-gradient(to right, #95a8fe, #0003cc);
 }
 
 .project-grid {
@@ -112,7 +117,7 @@ section {
 }
 
 .resume {
-  background: linear-gradient(to left, #ffdc89, #9c8f00);
+  background: linear-gradient(to right, #ffdc89, #9c8f00);
 }
 
 .resume-button {
