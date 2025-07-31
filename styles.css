@@ -192,7 +192,7 @@ section {
 
 .art-card {
   background: white;
-  padding: 0.5rem;
+  padding: 1rem;
   border: 1px solid #ccc;
   border-radius: 10px;
   scroll-snap-align: start;
@@ -201,6 +201,8 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .art-card img {
@@ -208,12 +210,13 @@ section {
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.5rem;
 }
 
 .art-card h3 {
   text-align: center;
   font-size: 2rem;
-  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   color: var(--main);
 }
 
