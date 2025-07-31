@@ -190,6 +190,33 @@ section {
   background: linear-gradient(to right, #a3ffa8, #1c8b00);
 }
 
+.art-card {
+  background: white;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  scroll-snap-align: start;
+  flex: 0 0 300px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.art-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.art-card h4 {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: var(--main);
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
