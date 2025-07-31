@@ -168,13 +168,13 @@ section {
 }
 
 /* Make items snap into view */
-.project,
+/*.project,
 .scroll-container img {
   scroll-snap-align: start;
   flex: 0 0 300px; /* Set width of project/art items */
-  border-radius: 8px;
+  /*border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+}*/
 
 @media (max-width: 600px) {
   .scroll-btn.left {
