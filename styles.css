@@ -210,6 +210,13 @@ section {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.art-card h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  color: var(--main);
+}
+
 .art-card h4 {
   text-align: center;
   font-size: 1rem;
