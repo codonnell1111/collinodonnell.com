@@ -77,6 +77,7 @@ section {
   scroll-snap-align: start;
   flex: 0 0 300px;
   box-sizing: border-box;
+  transition: transform 0.2s ease-in-out;
 }
 
 .project img {
@@ -211,6 +212,7 @@ section {
   align-items: center;
   text-align: center;
   font-family: var(--font);
+  transition: transform 0.2s ease-in-out;
 }
 
 .art-card img {
