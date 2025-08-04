@@ -176,15 +176,6 @@ section {
   right: 10px;
 }
 
-/* Make items snap into view */
-/*.project,
-.scroll-container img {
-  scroll-snap-align: start;
-  flex: 0 0 300px; /* Set width of project/art items */
-  /*border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}*/
-
 @media (max-width: 600px) {
   .scroll-btn.left {
     left: 5px;
@@ -253,6 +244,18 @@ section {
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 2rem;
+  padding: 2rem;
+}
+
+.resume-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.resume-left h2,
+.resume-left p,
+.resume-left a {
+  margin-bottom: 1rem;
 }
 
 .resume-button {
