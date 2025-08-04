@@ -99,8 +99,8 @@ section {
 }
 
 /* Applies to all project or art tiles */
-.project-card:hover,
-.art-piece:hover {
+.project:hover,
+.art-card:hover {
   transform: scale(1.05);
   transition: transform 0.2s ease-in-out;
   z-index: 2;
