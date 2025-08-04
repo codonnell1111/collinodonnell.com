@@ -260,6 +260,44 @@ section {
   font-weight: bold;
 }
 
+.contact-card {
+  background-color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 300px;
+  float: right;
+  margin-top: -4rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  text-align: left;
+  font-family: var(--font);
+}
+
+.contact-card h3 {
+  margin-top: 0;
+  color: var(--main);
+}
+
+.contact-card a {
+  color: var(--accent);
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .contact-card {
+    float: none;
+    margin: 2rem 0 0;
+  }
+}
+
 footer {
   background-color: var(--main);
   color: white;
