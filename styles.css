@@ -278,6 +278,7 @@ section {
   text-align: left;
   font-family: var(--font);
   color: var(--main);
+  opacity: 50%;
 }
 
 .contact-card h3 {
