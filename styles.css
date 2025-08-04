@@ -248,6 +248,11 @@ section {
 
 .resume {
   background: linear-gradient(to right, #ffdc89, #9c8f00);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .resume-button {
@@ -261,17 +266,15 @@ section {
 }
 
 .contact-card {
-  background-color: white;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(5px);
   padding: 1rem 1.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   max-width: 300px;
-  float: right;
-  margin-top: -4rem;
-  margin-bottom: 2rem;
-  margin-left: 2rem;
   text-align: left;
   font-family: var(--font);
+  color: var(--main);
 }
 
 .contact-card h3 {
