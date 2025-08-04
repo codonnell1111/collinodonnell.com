@@ -248,7 +248,7 @@ section {
 
 .resume {
   background: linear-gradient(to right, #ffdc89, #9c8f00);
-  display: flex;
+  display: fixed;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
