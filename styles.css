@@ -284,7 +284,8 @@ section {
 .contact-card h3 {
   margin-top: 0;
   color: var(--main);
-  font-size: 2rem;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .contact-card a {
@@ -293,7 +294,6 @@ section {
   display: inline-block;
   margin-bottom: 0.5rem;
   font-weight: bold;
-  font-size: 1.5rem;
 }
 
 .contact-card a:hover {
@@ -313,7 +313,6 @@ section {
 
 footer {
   background-color: var(--main);
-  color: white;
   text-align: center;
   padding: 1rem;
 }
