@@ -259,7 +259,7 @@ section h2 {
 .resume-left {
   background: rgba(183, 167, 109, 0.4);
   backdrop-filter: blur(5px);
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.5rem 3rem 1.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   max-width: 300px;
