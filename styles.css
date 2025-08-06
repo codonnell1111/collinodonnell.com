@@ -259,7 +259,7 @@ section h2 {
 .resume-left {
   flex: 1;
   min-width: 250px;
-  background: rgba(255, 255, 255, 0.8); /* similar transparency look */
+  background: rgba(183, 167, 109, 0.4); /* similar transparency look */
   backdrop-filter: blur(5px);
   padding: 1rem 1.5rem;
   border-radius: 10px;
