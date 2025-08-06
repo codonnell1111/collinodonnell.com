@@ -257,13 +257,15 @@ section h2 {
 }
 
 .resume-left {
-  min-width: 250px;
-  max-width: 300px;
-  background: rgba(183, 167, 109, 0.4); /* similar transparency look */
+  background: rgba(183, 167, 109, 0.4);
   backdrop-filter: blur(5px);
   padding: 1rem 1.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 300px;
+  text-align: left;
+  font-family: var(--font);
+  color: var(--main);
 }
 
 .resume-left h2 {
