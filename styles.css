@@ -299,7 +299,9 @@ section h2 {
   margin-bottom: 0.5rem;
   font-weight: bold;
 }
-.contact-card a:hover { text-decoration: underline; }
+.contact-card a:hover { 
+  text-decoration: underline; 
+}
 
 @media (max-width: 700px) {
   .resume { flex-direction: column; align-items: flex-start; }
@@ -310,12 +312,18 @@ section h2 {
 .modal {
   position: fixed; inset: 0;
   background: rgba(0,0,0,0.45);
-  display: none; align-items: center; justify-content: center;
-  z-index: 1000; padding: 1rem;
+  display: none; 
+  align-items: center; 
+  justify-content: center;
+  z-index: 1000; 
+  padding: 1rem;
 }
-.modal.show { display: flex; }
+.modal.show { 
+  display: flex; 
+}
 .modal-dialog {
-  width: 100%; max-width: 520px;
+  width: 100%; 
+  max-width: 520px;
   background: rgba(255,255,255,0.92);
   backdrop-filter: blur(6px);
   border-radius: 12px;
@@ -323,15 +331,48 @@ section h2 {
   padding: 1.25rem;
   color: var(--main);
   position: relative;
+  max-width: 90%; /* Keeps the modal fitting small screens */
+  box-sizing: border-box;
+}
+.modal-dialog input[type="text"],
+.modal-dialog input[type="email"],
+.modal-dialog textarea {
+  width: 100%;        /* Fill the available space */
+  max-width: 100%;    /* Never exceed the modal width */
+  box-sizing: border-box; /* Include padding/borders in width calc */
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: var(--font);
+  font-size: 1rem;
+}
+
+/* Keep labels from pushing content too wide */
+.modal-dialog label {
+  display: block;
+  font-weight: bold;
+  margin-top: 0.5rem;
 }
 .modal-close {
   position: absolute; right: 1.25rem; top: 1.25rem;
-  background: transparent; border: none; font-size: 1.2rem; cursor: pointer;
+  background: transparent; 
+  border: none; 
+  font-size: 1.2rem; 
+  cursor: pointer;
 }
-.modal form { display: grid; gap: .75rem; }
+.modal form { 
+  display: grid; 
+  gap: .75rem; 
+}
 .modal input, .modal textarea {
-  width: 100%; padding: .6rem .7rem; border-radius: 8px; border: 1px solid #ccc;
-  font-family: var(--font); font-size: 1rem;
+  width: 100%; 
+  padding: .6rem .7rem; 
+  border-radius: 8px; 
+  border: 1px solid #ccc;
+  font-family: var(--font); 
+  font-size: 1rem;
 }
 
 /* ===== Footer ===== */
