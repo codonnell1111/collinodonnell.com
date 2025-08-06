@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Collin O'Donnell</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
@@ -14,160 +14,169 @@
       <a href="#art">Art</a>
       <a href="#resume">Resume</a>
       <a href="#contact">Contact Info</a>
+      <a href="about-dev.html" class="dev-link">About Dev</a>
+      <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
     </nav>
   </header>
 
-  <section class="hero">
-    <img src="assets/images/profile2.jpg" alt="Photo of Collin O'Donnell">
+  <section class="hero reveal">
+    <img src="assets/images/profile2.jpg" alt="Photo of Collin O'Donnell" />
     <div class="bio">
       <h2>Hello, I'm Collin</h2>
-      <p>I’m a software engineer and artist based in Brooklyn, NY. I am a full-stack developer that uses PERN most often. I'm currently building on my machine learning and AI development skillsets. 
-        I also love to create expressive, colorful paintings and drawings. And have a passion for building and fabrication as well.  
-        This site is a space to explore both sides of my work—creative and technical.</p>
+      <p>
+        I’m a software engineer and artist based in Brooklyn, NY. I am a full-stack developer that uses PERN most often. I'm currently building on my machine learning and AI development skillsets.
+        I also love to create expressive, colorful paintings and drawings, and have a passion for building and fabrication.
+        This site is a space to explore both sides of my work—creative and technical.
+      </p>
     </div>
   </section>
 
-    <section id="portfolio" class="portfolio">
+  <section id="portfolio" class="portfolio reveal">
     <h2>Software Engineering Portfolio</h2>
 
     <div class="carousel-wrapper">
       <button class="scroll-btn left" aria-label="Scroll left">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="15 18 9 12 15 6"></polyline>
         </svg>
       </button>
-      <!--<button class="scroll-btn left" aria-label="Scroll left">←</button> -->
 
       <div class="scroll-container">
         <div class="project">
-          <img src="assets/images/moodgarden.png" alt="Mood Garden Screenshot">
+          <img src="assets/images/moodgarden.png" alt="Mood Garden Screenshot" />
           <h3>Mood Garden</h3>
           <p>A creative journaling app where users input their mood and their personal garden grows...</p>
+          <div class="tech-badges">
+            <span>React</span><span>Express</span><span>Node</span><span>PostgreSQL</span>
+          </div>
           <a href="https://github.com/codonnell1111/mood-garden" target="_blank">View on GitHub</a>
           <a href="https://moodgarden.netlify.app" target="_blank">Live Demo</a>
         </div>
 
         <div class="project">
-          <img src="assets/images/bramble.png" alt="Bramble Screenshot">
+          <img src="assets/images/bramble.png" alt="Bramble Screenshot" />
           <h3>Bramble</h3>
           <p>A simple social media app where users can create profiles, follow friends, and post...</p>
+          <div class="tech-badges">
+            <span>React</span><span>React Router</span><span>Netlify</span>
+          </div>
           <a href="https://github.com/codonnell1111/bramble" target="_blank">View on GitHub</a>
           <a href="https://brambl.netlify.app" target="_blank">Live Demo</a>
         </div>
 
         <div class="project">
-          <img src="assets/images/jammmin.png" alt="Jammmin Screenshot">
+          <img src="assets/images/jammmin.png" alt="Jammmin Screenshot" />
           <h3>Jammmin</h3>
           <p>A music player where users search Spotify songs and build playlists via API.</p>
+          <div class="tech-badges">
+            <span>React</span><span>Spotify API</span>
+          </div>
           <a href="https://github.com/codonnell1111/jammmin" target="_blank">View on GitHub</a>
           <a href="https://jammmin.netlify.app" target="_blank">Live Demo</a>
         </div>
 
         <div class="project">
-          <img src="assets/images/booknow.png" alt="BookNow Screenshot">
+          <img src="assets/images/booknow.png" alt="BookNow Screenshot" />
           <h3>BookNow</h3>
           <p>A calendar for readers to schedule books and track their reading plans.</p>
+          <div class="tech-badges">
+            <span>React</span><span>React Big Calendar</span><span>Date-Fns</span>
+          </div>
           <a href="https://github.com/codonnell1111/BookNow" target="_blank">View on GitHub</a>
-          <a href="https://bookcalender.netlify.app" target="_blank">Live Demo</a>
+          <a href="https://booknow.netlify.app" target="_blank">Live Demo</a>
         </div>
 
         <div class="project">
-          <img src="assets/images/abruptly-goblins.png" alt="Abruptly Goblins Screenshot">
+          <img src="assets/images/abruptly-goblins.png" alt="Abruptly Goblins Screenshot" />
           <h3>Abruptly Goblins</h3>
-          <p>A signup form for players of Abruptly Goblins that takes in user inputs for days and times they can play. Then it combs through the inputs from every player and spits out the best and second best days and times that players are available.</p>
+          <p>A signup form for players of Abruptly Goblins that takes in user inputs for days and times they can play, then finds the best match.</p>
+          <div class="tech-badges">
+            <span>Flask</span><span>Gunicorn</span><span>Render</span>
+          </div>
           <a href="https://github.com/codonnell1111/abruptly-goblins" target="_blank">View on GitHub</a>
-          <a href="https://abruptly-goblins.onrender.com" target="_blank">Live Demo</a>
+          <a href="https://abruptly-goblins.netlify.app" target="_blank">Live Demo</a>
         </div>
       </div>
 
       <button class="scroll-btn right" aria-label="Scroll right">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="9 18 15 12 9 6"></polyline>
         </svg>
       </button>
     </div>
   </section>
 
-  <section id="art" class="art">
-  <h2>Art Gallery</h2>
+  <section id="art" class="art reveal">
+    <h2>Art Gallery</h2>
 
-  <div class="carousel-wrapper">
-    <button class="scroll-btn left" aria-label="Scroll left">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <polyline points="15 18 9 12 15 6"></polyline>
-      </svg>
-    </button>
+    <div class="carousel-wrapper">
+      <button class="scroll-btn left" aria-label="Scroll left">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
 
-    <div class="scroll-container">
-      <div class="art-card">
-        <img src="assets/images/art1.jpg" alt="Artwork 1">
-        <h3>"Not So Perfect"</h3>
-        <p>A colorful piece that was designed to show symmetrical shapes and design on an asymmetrical foundation.</p>
+      <div class="scroll-container">
+        <div class="art-card">
+          <img src="assets/images/art1.jpg" alt="Artwork 1" />
+          <h3>"Not So Perfect"</h3>
+          <p>A colorful piece designed to show symmetrical shapes on an asymmetrical foundation.</p>
+        </div>
+        <div class="art-card">
+          <img src="assets/images/art2.jpg" alt="Artwork 2" />
+          <h3>"Jellyshroom"</h3>
+          <p>A surreal fusion of jellyfish and mushroom set in a dreamlike sea of movement and color.</p>
+        </div>
+        <div class="art-card">
+          <img src="assets/images/art3.jpg" alt="Artwork 3" />
+          <h3>"Heartbeats"</h3>
+          <p>Bold colors and symbols of music and emotion collide in this passionate abstract.</p>
+        </div>
+        <div class="art-card">
+          <img src="assets/images/art4.jpg" alt="Artwork 4" />
+          <h3>"Time Glitch"</h3>
+          <p>A mixed-media mirror clock encased in reflective tile, distorting time and space.</p>
+        </div>
+        <div class="art-card">
+          <img src="assets/images/art5.jpg" alt="Artwork 5" />
+          <h3>"Fungiverse"</h3>
+          <p>A whimsical collection of hand-cast resin mushrooms in varying shapes and hues.</p>
+        </div>
+        <div class="art-card">
+          <img src="assets/images/art6.jpg" alt="Artwork 6" />
+          <h3>"Edge of Motion"</h3>
+          <p>A freehand mural exploring rhythm and form through layered color fields and geometry.</p>
+        </div>
+        <div class="art-card">
+          <img src="assets/images/art7.jpg" alt="Artwork 7" />
+          <h3>"Bolt Rider"</h3>
+          <p>A miniature motorcycle welded from reclaimed nuts and bolts — motion in metal.</p>
+        </div>
+        <div class="art-card">
+          <img src="assets/images/art8.jpg" alt="Artwork 8" />
+          <h3>"Face Bloom"</h3>
+          <p>A sculptural flower pot reimagined with vibrant hand-painted features.</p>
+        </div>
+        <div class="art-card">
+          <img src="assets/images/art9.jpg" alt="Artwork 9" />
+          <h3>"Heart of Jewels"</h3>
+          <p>A hand-carved wooden jewelry box shaped as a heart, painted in cosmic hues.</p>
+        </div>
       </div>
 
-      <div class="art-card">
-        <img src="assets/images/art2.jpg" alt="Artwork 2">
-        <h3>"Jellyshroom"</h3>
-        <p>A surreal fusion of jellyfish and mushroom set in a dreamlike sea of movement and color.</p>
-      </div>
-
-      <div class="art-card">
-        <img src="assets/images/art3.jpg" alt="Artwork 3">
-        <h3>"Heartbeats"</h3>
-        <p>Bold colors and symbols of music and emotion collide in this passionate abstract.</p>
-      </div>
-
-      <div class="art-card">
-        <img src="assets/images/art4.jpg" alt="Artwork 4">
-        <h3>"Time Glitch"</h3>
-        <p>A mixed-media mirror clock encased in reflective tile, distorting time and space.</p>
-      </div>
-
-      <div class="art-card">
-        <img src="assets/images/art5.jpg" alt="Artwork 5">
-        <h3>"Fungiverse"</h3>
-        <p>A whimsical collection off hand-cast resin mushrooms in varying shapes and hues. A glowing ecosstems of surreal forms and playful proportions.</p>
-      </div>
-
-      <div class="art-card">
-        <img src="assets/images/art6.jpg" alt="Artwork 6">
-        <h3>"Edge of Motion"</h3>
-        <p>A freehand mural exploring rhythm and form through layered color fields and geometric tension.</p>
-      </div>
-
-      <div class="art-card">
-        <img src="assets/images/art7.jpg" alt="Artwork 7">
-        <h3>"Bolt Rider"</h3>
-        <p>A miniature motorcycle welded from reclaim nuts and bolts. Industrial scraps trasformed into a symbol of motion, power, and craftsmanship.</p>
-      </div>
-
-      <div class="art-card">
-        <img src="assets/images/art8.jpg" alt="Artwork 8">
-        <h3>"Face Bloom"</h3>
-        <p>A sculptural flower pot reimagined with vibrant hand-painted features. A joyful fusion of nature, identity, and color.</p>
-      </div>
-
-      <div class="art-card">
-        <img src="assets/images/art9.jpg" alt="Artwork 9">
-        <h3>"Heart of Jewels"</h3>
-        <p>A jewelry box hand carved into a heart. Made from wood and hand painted to look like a galaxy along with the Aries "Ram" symbol on top.</p>
-      </div>
+      <button class="scroll-btn right" aria-label="Scroll right">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
     </div>
+  </section>
 
-    <button class="scroll-btn right" aria-label="Scroll right">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <polyline points="9 18 15 12 9 6"></polyline>
-      </svg>
-    </button>
-  </div>
-</section>
-
-
-  <section id="resume" class="resume">
+  <section id="resume" class="resume reveal">
     <div class="resume-left">
       <h2>Resume</h2>
       <p>Download to view my resume:</p>
@@ -175,6 +184,7 @@
     </div>
     <div id="contact" class="contact-card">
       <h3>Contact Me</h3>
+      <button class="resume-button" id="open-contact-modal">Message Me</button>
       <p><a href="mailto:codonnell1111@gmail.com">codonnell1111@gmail.com</a></p>
       <p><a href="https://www.linkedin.com/in/collin-odonnell11" target="_blank">LinkedIn</a></p>
       <p><a href="https://github.com/codonnell1111" target="_blank">GitHub</a></p>
@@ -184,7 +194,31 @@
   <footer>
     <p>&copy; 2025 Collin O'Donnell</p>
   </footer>
-<script src="script.js"></script>
+
+  <!-- Contact Modal (Netlify Forms, no backend needed) -->
+  <div id="contact-modal" class="modal" aria-hidden="true">
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="contactTitle">
+      <button class="modal-close" id="close-contact-modal" aria-label="Close">✕</button>
+      <h3 id="contactTitle">Send me a message</h3>
+      <form name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
+        <label>
+          Your name
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Your email
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit" class="resume-button">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
