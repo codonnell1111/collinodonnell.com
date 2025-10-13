@@ -32,25 +32,6 @@ document.querySelectorAll('.carousel-wrapper').forEach(wrapper => {
   els.forEach(el => io.observe(el));
 })();
 
-// ===== Dark mode toggle (persisted with localStorage) =====
-(function () {
-  const btn = document.getElementById('theme-toggle');
-  const stored = localStorage.getItem('theme');
-  if (stored === 'dark') document.body.classList.add('dark');
-
-  const setIcon = () => {
-    if (!btn) return;
-    btn.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
-  };
-  setIcon();
-
-  btn?.addEventListener('click', () => {
-    document.body.classList.toggle('dark');
-    localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
-    setIcon();
-  });
-})();
-
 // ===== Contact modal (no backend; Netlify forms) =====
 (function () {
   const openBtn = document.getElementById('open-contact-modal');
