@@ -10,30 +10,252 @@
   <header>
     <h1>Collin O'Donnell</h1>
 
-    <!-- Desktop links -->
+    <!-- Desktop nav -->
     <nav class="nav-links" aria-label="Primary">
       <a href="#portfolio">Portfolio</a>
       <a href="#art">Art</a>
       <a href="#resume">Resume</a>
-      <a href="#contact">Contact Info</a>
+      <a href="#contact">Contact</a>
       <a href="about-dev.html" class="dev-link">About Dev</a>
     </nav>
 
-    <!-- Controls (right side): theme + menu -->
+    <!-- Controls -->
     <div class="header-controls">
       <button id="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">🌙</button>
       <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Open menu">☰</button>
     </div>
 
-    <!-- Mobile drawer -->
+    <!-- Mobile drawer (NAV ONLY — no content duplicates) -->
     <div id="mobile-drawer" class="drawer" hidden>
       <a href="#portfolio">Portfolio</a>
       <a href="#art">Art</a>
       <a href="#resume">Resume</a>
-      <a href="#contact">Contact Info</a>
+      <a href="#contact">Contact</a>
       <a href="about-dev.html" class="dev-link">About Dev</a>
     </div>
   </header>
+
+  <!-- HERO -->
+  <section class="hero reveal">
+    <img src="assets/images/profile2.jpg" alt="Photo of Collin O'Donnell" />
+    <div class="bio">
+      <h2>Hello, I'm Collin</h2>
+      <p>
+        I’m a software engineer and artist based in Brooklyn, NY. I am a full-stack developer that uses PERN most often. I'm currently building on my machine learning and AI development skillsets.
+        I also love to create expressive, colorful paintings and drawings, and have a passion for building and fabrication.
+        This site is a space to explore both sides of my work—creative and technical.
+      </p>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="portfolio reveal">
+    <h2>Software Engineering Portfolio</h2>
+
+    <div class="carousel-wrapper">
+      <button class="scroll-btn left" aria-label="Scroll left">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+
+      <div class="scroll-container">
+        <div class="project">
+          <img src="assets/images/findmyrestaurant.png" alt="Find My Restaurant Screenshot" />
+          <h3>Find My Restaurant</h3>
+          <p>Search, explore, filter, and get directions with Google Maps. Save and star favorites.</p>
+          <div class="tech-badges">
+            <span>React</span><span>Express</span><span>Node</span><span>JavaScript</span><span>HTML5</span><span>Google Maps API</span>
+          </div>
+          <a href="https://github.com/codonnell1111/findmyrestaurant" target="_blank" rel="noopener">View on GitHub</a>
+          <a href="https://find-myrestaurant.netlify.app" target="_blank" rel="noopener">Live Demo</a>
+        </div>
+
+        <div class="project">
+          <img src="assets/images/skyline-sprint.png" alt="Skyline Sprint Screenshot" />
+          <h3>Skyline Sprint</h3>
+          <p>Collect coins, dodge obstacles—built with Phaser 3 and Vite.</p>
+          <div class="tech-badges">
+            <span>Phaser 3</span><span>Vite</span><span>Node.js</span><span>TypeScript</span><span>HTML</span><span>CSS</span>
+          </div>
+          <a href="https://github.com/codonnell1111/skyline-sprint" target="_blank" rel="noopener">View on GitHub</a>
+          <a href="https://skyline-sprint.netlify.app" target="_blank" rel="noopener">Live Demo</a>
+        </div>
+
+        <div class="project">
+          <img src="assets/images/moodgarden.png" alt="Mood Garden Screenshot" />
+          <h3>Mood Garden</h3>
+          <p>Creative journaling—log your mood and watch a garden grow.</p>
+          <div class="tech-badges">
+            <span>React</span><span>Express</span><span>Node</span><span>PostgreSQL</span><span>JavaScript</span>
+          </div>
+          <a href="https://github.com/codonnell1111/mood-garden" target="_blank" rel="noopener">View on GitHub</a>
+          <a href="https://moodgarden.netlify.app" target="_blank" rel="noopener">Live Demo</a>
+        </div>
+
+        <div class="project">
+          <img src="assets/images/bramble.png" alt="Bramble Screenshot" />
+          <h3>Bramble</h3>
+          <p>Simple social app—profiles, following, and posting.</p>
+          <div class="tech-badges">
+            <span>React</span><span>React Router</span><span>Netlify</span>
+          </div>
+          <a href="https://github.com/codonnell1111/bramble" target="_blank" rel="noopener">View on GitHub</a>
+          <a href="https://brambl.netlify.app" target="_blank" rel="noopener">Live Demo</a>
+        </div>
+
+        <div class="project">
+          <img src="assets/images/jammmin.png" alt="Jammmin Screenshot" />
+          <h3>Jammmin</h3>
+          <p>Search Spotify and build playlists via API.</p>
+          <div class="tech-badges">
+            <span>React</span><span>Spotify API</span>
+          </div>
+          <a href="https://github.com/codonnell1111/jammmin" target="_blank" rel="noopener">View on GitHub</a>
+          <a href="https://jammmin.netlify.app" target="_blank" rel="noopener">Live Demo</a>
+        </div>
+
+        <div class="project">
+          <img src="assets/images/booknow.png" alt="BookNow Screenshot" />
+          <h3>BookNow</h3>
+          <p>Plan your reads with a calendar-based UI.</p>
+          <div class="tech-badges">
+            <span>React</span><span>React Big Calendar</span><span>Date-Fns</span>
+          </div>
+          <a href="https://github.com/codonnell1111/BookNow" target="_blank" rel="noopener">View on GitHub</a>
+          <a href="https://booknow.netlify.app" target="_blank" rel="noopener">Live Demo</a>
+        </div>
+
+        <div class="project">
+          <img src="assets/images/abruptly-goblins.png" alt="Abruptly Goblins Screenshot" />
+          <h3>Abruptly Goblins</h3>
+          <p>Find the best game-night time. Collect availabilities and pick the winner.</p>
+          <div class="tech-badges">
+            <span>Flask</span><span>Gunicorn</span><span>Render</span>
+          </div>
+          <a href="https://github.com/codonnell1111/abruptly-goblins" target="_blank" rel="noopener">View on GitHub</a>
+          <a href="https://abruptly-goblins.netlify.app" target="_blank" rel="noopener">Live Demo</a>
+        </div>
+      </div>
+
+      <button class="scroll-btn right" aria-label="Scroll right">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ART -->
+  <section id="art" class="art reveal">
+    <h2>Art Gallery</h2>
+
+    <div class="carousel-wrapper">
+      <button class="scroll-btn left" aria-label="Scroll left">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+
+      <div class="scroll-container">
+        <div class="art-card">
+          <img src="assets/images/art1.jpg" alt="Artwork 1" />
+          <h3>"Not So Perfect"</h3>
+          <p>Symmetry on an asymmetrical foundation.</p>
+        </div>
+        <div class="art-card">
+          <img src="assets/images/art2.jpg" alt="Artwork 2" />
+          <h3>"Jellyshroom"</h3>
+          <p>Jellyfish meets mushroom in motion.</p>
+        </div>
+        <div class="art-card">
+          <img src="assets/images/art3.jpg" alt="Artwork 3" />
+          <h3>"Heartbeats"</h3>
+          <p>Music and emotion in bold color.</p>
+        </div>
+        <div class="art-card">
+          <img src="assets/images/art4.jpg" alt="Artwork 4" />
+          <h3>"Time Glitch"</h3>
+          <p>Mirror, tile, and warped time.</p>
+        </div>
+        <div class="art-card">
+          <img src="assets/images/art5.jpg" alt="Artwork 5" />
+          <h3>"Fungiverse"</h3>
+          <p>Resin mushrooms in varied forms.</p>
+        </div>
+        <div class="art-card">
+          <img src="assets/images/art6.jpg" alt="Artwork 6" />
+          <h3>"Edge of Motion"</h3>
+          <p>Freehand mural of rhythm and form.</p>
+        </div>
+        <div class="art-card">
+          <img src="assets/images/art7.jpg" alt="Artwork 7" />
+          <h3>"Bolt Rider"</h3>
+          <p>Mini motorcycle from reclaimed metal.</p>
+        </div>
+        <div class="art-card">
+          <img src="assets/images/art9.jpg" alt="Artwork 9" />
+          <h3>"Heart of Jewels"</h3>
+          <p>Hand-carved heart jewelry box.</p>
+        </div>
+      </div>
+
+      <button class="scroll-btn right" aria-label="Scroll right">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- RESUME + CONTACT (one section, two anchors) -->
+  <section class="resume reveal">
+    <div id="resume" class="resume-left">
+      <h2>Resume</h2>
+      <p>Download my resume:</p>
+      <a href="assets/resume.pdf" target="_blank" class="resume-button" rel="noopener">Download Resume</a>
+    </div>
+
+    <div id="contact" class="contact-card">
+      <h2>Contact</h2>
+      <button class="resume-button" id="open-contact-modal">Message Me</button>
+      <p><a href="mailto:codonnell1111@gmail.com">codonnell1111@gmail.com</a></p>
+      <p><a href="https://www.linkedin.com/in/collin-odonnell11" target="_blank" rel="noopener">LinkedIn</a></p>
+      <p><a href="https://github.com/codonnell1111" target="_blank" rel="noopener">GitHub</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Collin O'Donnell</p>
+  </footer>
+
+  <!-- Contact Modal -->
+  <div id="contact-modal" class="modal" aria-hidden="true">
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="contactTitle">
+      <button class="modal-close" id="close-contact-modal" aria-label="Close">✕</button>
+      <h3 id="contactTitle">Send me a message</h3>
+      <form name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
+        <label>
+          Your name
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Your email
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit" class="resume-button">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
   <section class="hero reveal">
     <img src="assets/images/profile2.jpg" alt="Photo of Collin O'Donnell" />
