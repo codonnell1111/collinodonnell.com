@@ -43,19 +43,29 @@ document.querySelectorAll('.carousel-wrapper').forEach(wrapper => {
 (() => {
   const toggle = document.getElementById('menu-toggle');
   const drawer = document.getElementById('mobile-drawer');
+  const scrim  = document.getElementById('nav-scrim'); // NEW
   if (!toggle || !drawer) return;
 
-  const close = () => { drawer.hidden = true; toggle.setAttribute('aria-expanded', 'false'); };
-  const open  = () => { drawer.hidden = false; toggle.setAttribute('aria-expanded', 'true'); };
+  const close = () => {
+    drawer.hidden = true;
+    if (scrim) scrim.hidden = true;       // NEW
+    toggle.setAttribute('aria-expanded', 'false');
+  };
+  const open  = () => {
+    drawer.hidden = false;
+    if (scrim) scrim.hidden = false;      // NEW
+    toggle.setAttribute('aria-expanded', 'true');
+  };
 
   toggle.addEventListener('click', () => {
     const expanded = toggle.getAttribute('aria-expanded') === 'true';
     expanded ? close() : open();
   });
 
-  // close on link click + support anchors
   drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
 
-  // close on escape
+  if (scrim) scrim.addEventListener('click', close);   // NEW
   document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
 })();
+
+
