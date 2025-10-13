@@ -73,3 +73,35 @@ document.querySelectorAll('.carousel-wrapper').forEach(wrapper => {
   modal.addEventListener('click', e => { if (e.target === modal) close(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && modal.classList.contains('show')) close(); });
 })();
+
+// ===== Mobile nav (hamburger) =====
+(function () {
+  const toggle = document.getElementById('menu-toggle');
+  const drawer = document.getElementById('mobile-drawer');
+
+  if (!toggle || !drawer) return;
+
+  const close = () => {
+    drawer.hidden = true;
+    toggle.setAttribute('aria-expanded', 'false');
+  };
+  const open = () => {
+    drawer.hidden = false;
+    toggle.setAttribute('aria-expanded', 'true');
+  };
+
+  toggle.addEventListener('click', () => {
+    const expanded = toggle.getAttribute('aria-expanded') === 'true';
+    expanded ? close() : open();
+  });
+
+  // Close on route click
+  drawer.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', close);
+  });
+
+  // Close on escape
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') close();
+  });
+})();
