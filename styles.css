@@ -35,15 +35,16 @@ header h1{
   position:fixed; top:var(--header-h); left:0; right:0;
   z-index:110; /* above header */
   display:grid; gap:.25rem;
-  background:rgba(36,41,46,.98);
-  border-bottom:1px solid rgba(255,255,255,.1);
+  background:rgba(16,18,22,0.97);
+  border-bottom:1px solid rgba(255,255,255,.18);
   padding:.5rem .75rem;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.35);
 }
 .drawer[hidden]{ display:none !important; }
 .drawer a{
-  display:block; padding:.9rem; border-radius:8px; color:#fff; text-decoration:none; font-weight:700;
+  display:block; padding:1rem; border-radius:8px; color:#fff; text-decoration:none; font-weight:800;
 }
-.drawer a:hover{ background:rgba(255,255,255,.1); }
+.drawer a:hover{ background:rgba(255,255,255,.08); }
 
 @media (min-width:820px){
   header{ grid-template-columns:auto 1fr auto; }
